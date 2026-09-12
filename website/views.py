@@ -3,12 +3,12 @@ from django.http import HttpResponse
 # Create your views here.
 
 def Index_view (request):
-    return HttpResponse('<h1>Home Page </h1>')
+    return render(request , 'index.html')
 
 
 def About_view (request):
-    return HttpResponse('<h1>About Page </h1>')
+    return render(request , 'about.html')
 
 
 def Contact_view (request):
-    return HttpResponse('<h1>Contact Page </h1>')
+    return render(request , 'contact.html')
